@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+
+     body{text-align: center;}
+     P{font-size:20px}
+</style>
+
+</head>
+
+<body>
+    <p style= "margin-top: 70px">Diga um número:</p>
+<input type="number" id="n1">
+    <p>Diga outro número</p>
+<input type="number" id="n2">
+<p></p>
+
+
+<button id="botaosomar">somar</button>
+<script>
+    const botao=document.getElementById('botaosomar')
+    const n1=document.getElementById('n1')
+    const n2=document.getElementById('n2')
+   
+    botao.addEventListener('click', function(){
+        let soma=parsefloat(n1.value)+(n2.value)
+        alert('a soma dos números é', soma)
+    })
+
+</script>
+
+
+
+</body>
+
+</html>
