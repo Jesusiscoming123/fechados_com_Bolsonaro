@@ -1,6 +1,11 @@
 <html>
 <head>
+<script>
 
+     
+</script>
+
+    
 </head>
 
 <body style="text-align: center" background= "c:\Users\SI Prudente\Downloads\unnamed.png"> 
@@ -10,9 +15,67 @@
 <input type="text"/>
 <p>Escolha uma opção</p>
 
-<button style="padding: 10px 15px; margin: 10px;">Pedra</button>
-<button style="padding: 10px 15px; margin: 10px; ">Papel</button>
-<button style="padding: 10px 15px; margin: 10px;">Tesoura</button>
+<button style="padding: 10px 15px; margin: 10px" id="pedra">Pedra</button>
+<button style="padding: 10px 15px; margin: 10px" id="papel">Papel</button>
+<button style="padding: 10px 15px; margin: 10px" id="tesoura">Tesoura</button>
+
+
+
+
+<p id="resultado"></p>
+
+
+
+<script>
+   
+   function gerajogada(){
+   const opcoes = ['pedra', 'papel','tesoura']
+            const opcaoal = Math.floor(Math.random() * 3)
+            return opcoes [opcaoal]
+}
+   
+   function jogar(player){
+          const pc = gerajogada()
+   
+          let resultado= ''
+           if(player === pc){
+              resultado = "empate"
+          }else if(
+          (player === 'pedra' && pc == 'tesoura') ||
+                  (player === 'tesoura' && pc == 'papel') ||
+                  (player === 'papel' && pc == 'pedra')){
+                         resultado = 'Você venceu'
+                  
+        }else {
+            resultado = 'você perdeu'
+        }
+            document.getElementById('resultado').innerText = resultado
+    }
+  
+           const pedra = document.getElementById('pedra');
+           pedra.addEventListener('click', function(){
+                   jogar ('pedra')
+ 
+                })
+            const papel = document.getElementById('papel');
+           papel.addEventListener('click', function(){
+                 jogar('papel')
+  })
+
+  
+  
+  const tesoura = document.getElementById('tesoura');
+           tesoura.addEventListener('click', function(){
+                   jogar('tesoura')
+  })
+
+ 
+
+
+</script>
+
+
+
 
 </body>
 </html>
