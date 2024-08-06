@@ -1,0 +1,157 @@
+<html>
+<head>
+  
+    <meta charset="UTF-8">
+    <title>Venda de Imóveis</title>
+
+<style>
+         body{
+              font-family: 'Courier New', Courier, monospace;
+        }
+            .cartao{
+             width:18%;
+             border:2px solid black; 
+             border-radius: 15px;
+             padding: 20px;
+             margin: 1%;
+            }
+
+           img{
+            width:100% ;
+            border-radius: 10px;
+        }
+           .titulo{
+                 text-align: left;
+                 font-weight: bold;
+           }
+           .descricao{
+                text-align: left;
+                font-size: 14px;
+
+
+           }
+           .lista{
+                 margin: 3%;
+                 display: flex;
+                 justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+           .rodape{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+           }
+            .preco{
+             
+               font-weight: bold;
+            }
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<h1 style="text-align: center;">Venda de Imóveis</h1>
+<h3 style="margin-top: 6%;">Terrenos</h3>
+
+
+<div class="lista">
+      <div class="cartao">
+          <img src="https://i.pinimg.com/736x/29/72/ee/2972eede92c05a04d6ce512a1a9a9226.jpg">
+          <p class="titulo">Terreno de 200m²</p>
+          <p class="descricao">O terreno de Maicon possui 200 blocos²</p>
+          <div class="rodape">
+          <p class="preco">R$100.000</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+    
+
+    <div class="cartao">
+        <img src="data:image/jpeg;base64,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">
+        <p class="titulo">Índio Emo Bombado</p>
+        <p class="descricao">O último de sua espécie</p>
+        <div class="rodape">
+        <p class="preco">R$89.99</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+   
+        <div class="cartao">
+            <img src="https://i.pinimg.com/736x/29/72/ee/2972eede92c05a04d6ce512a1a9a9226.jpg">
+            <p class="titulo">Terreno de 200m²</p>
+            <p class="descricao">O terreno de Maicon possui 200 blocos²</p>
+            <div class="rodape">
+            <p class="preco">R$100.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+
+       
+            <div class="cartao">
+                <img src="https://i.pinimg.com/736x/29/72/ee/2972eede92c05a04d6ce512a1a9a9226.jpg">
+                <p class="titulo">Terreno de 200m²</p>
+                <p class="descricao">O terreno de Maicon possui 200 blocos²</p>
+                <div class="rodape">
+                <p class="preco">R$100.000</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+        </div>
+
+
+
+<h3>Casas</h3>
+    
+<div class="lista">
+    <div class="cartao">
+        <img src="https://pm1.aminoapps.com/6406/b397e68acdb14476218176c28b6bdb35dd51df22_00.jpg">
+        <p class="titulo">Anãndo Moura</p>
+        <p class="descricao">Maior Bolsonarista existente!</p>
+        <div class="rodape">
+        <p class="preco">R$100.000</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    
+        <div class="cartao">
+            <img src="https://pm1.aminoapps.com/6406/b397e68acdb14476218176c28b6bdb35dd51df22_00.jpg">
+            <p class="titulo">Anãndo Moura</p>
+            <p class="descricao">Maior Bolsonarista existente!</p>
+            <div class="rodape">
+            <p class="preco">R$100.000</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+
+       
+            <div class="cartao">
+                <img src="https://pm1.aminoapps.com/6406/b397e68acdb14476218176c28b6bdb35dd51df22_00.jpg">
+                <p class="titulo">Anãndo Moura</p>
+                <p class="descricao">Maior Bolsonarista existente!</p>
+                <div class="rodape">
+                <p class="preco">R$100.000</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+           
+                <div class="cartao">
+                    <img src="https://pm1.aminoapps.com/6406/b397e68acdb14476218176c28b6bdb35dd51df22_00.jpg">
+                    <p class="titulo">Anãndo Moura</p>
+                    <p class="descricao">Maior Bolsonarista existente!</p>
+                    <div class="rodape">
+                    <p class="preco">R$100.000</p>
+                    <button>Comprar</button>
+                  </div>
+                </div>
+
+</body>
+</html>
